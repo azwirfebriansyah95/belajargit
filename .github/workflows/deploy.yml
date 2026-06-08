@@ -23,8 +23,9 @@ jobs:
           port: 21
           protocol: ftp
           security: loose
-          # 🚫 Daftar folder yang DIABAIKAN (Wajib mengabaikan semua file .git)
+          # 🚫 Kita tambahkan .github/** agar robot tidak mengupload dirinya sendiri ke cPanel
           exclude: |
+            **/.github/**
             **/.git/**
             **/.git*
             **/node_modules/**
