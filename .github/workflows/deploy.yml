@@ -23,8 +23,9 @@ jobs:
           port: 21
           protocol: ftp
           security: loose
-          # 🚫 Daftar folder yang DIABAIKAN (tidak ikut di-upload agar tidak merusak data cPanel)
+          # 🚫 Daftar folder yang DIABAIKAN (Wajib mengabaikan semua file .git)
           exclude: |
+            **/.git/**
             **/.git*
             **/node_modules/**
             **/vendor/**
